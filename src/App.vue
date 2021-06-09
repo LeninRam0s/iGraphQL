@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main>
+    <px-header/>
+    <px-table class="container px-5 sm:px-20 justify-center"/>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PxHeader from '@/components/PxHeader';
+import PxTable from '@/components/PxTable';
+
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    PxHeader,
+    PxTable
+  },
+};
 </script>
 
 <style>
